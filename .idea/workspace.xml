@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/controllers/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/epopov/AppTest.java" afterDir="false" />
+    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Added dummy business logic">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/configuration/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/AuthServerProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/OTPAuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/UsernamePassAuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/security/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epopov/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +40,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "ce5e8a213c74652644a07928b1e6ac8f"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
@@ -87,6 +97,24 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jwt-opt-auth-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.epopov.App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epopov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,8 +124,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667589038106</updated>
-      <workItem from="1667589040367" duration="1013000" />
+      <workItem from="1667589040367" duration="4033000" />
+      <workItem from="1668249362969" duration="1551000" />
+      <workItem from="1668463441376" duration="1711000" />
+      <workItem from="1668974214690" duration="28000" />
+      <workItem from="1668974256087" duration="1255000" />
     </task>
+    <task id="LOCAL-00001" summary="Init commit">
+      <created>1667590345804</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667590345804</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added dummy business logic">
+      <created>1667590366681</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667590366681</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,5 +160,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit" />
+    <MESSAGE value="Added dummy business logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dummy business logic" />
   </component>
 </project>
