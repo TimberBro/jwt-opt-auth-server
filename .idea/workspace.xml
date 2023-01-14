@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Added dummy business logic">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/configuration/ProjectConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/AuthServerProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/OTPAuthProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/UsernamePassAuthProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epopov/security/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epopov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/HELP.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -60,7 +54,7 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.App">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -110,6 +104,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="auth-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.epopov.authserver.AuthServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.App" />
@@ -129,6 +130,7 @@
       <workItem from="1668463441376" duration="1711000" />
       <workItem from="1668974214690" duration="28000" />
       <workItem from="1668974256087" duration="1255000" />
+      <workItem from="1673700624312" duration="428000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1667590345804</created>
