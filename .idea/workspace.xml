@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Added dummy business logic">
-      <change beforePath="$PROJECT_DIR$/auth-server/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/HELP.md" afterDir="false" />
+    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Added user service and util for service">
+      <change afterPath="$PROJECT_DIR$/business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/configuration/ProjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/configuration/ProjectConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/controllers/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/AuthServerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/AuthServerProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/OTPAuthProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/OTPAuthProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/UsernamePassAuthProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/UsernamePassAuthProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/security/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/epopov/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/test/java/com/epopov/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +29,30 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,30 +63,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "ce5e8a213c74652644a07928b1e6ac8f"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c2a773c56eac6a20dbf78a397b611e10&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\localadmin\IdeaProjects\jwt-opt-auth-server\business" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.App">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn archetype:generate -DgroupId=com.epopov -DartifactId=business" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.AuthServerApplicationTests">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -91,6 +141,21 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="AuthServerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epopov.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epopov" />
+      <option name="MAIN_CLASS_NAME" value="com.epopov.AuthServerApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="jwt-opt-auth-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.epopov.App" />
@@ -113,6 +178,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthServerApplicationTests" />
         <item itemvalue="Spring Boot.App" />
       </list>
     </recent_temporary>
@@ -130,7 +196,11 @@
       <workItem from="1668463441376" duration="1711000" />
       <workItem from="1668974214690" duration="28000" />
       <workItem from="1668974256087" duration="1255000" />
-      <workItem from="1673700624312" duration="428000" />
+      <workItem from="1673700624312" duration="1894000" />
+      <workItem from="1673707985838" duration="6879000" />
+      <workItem from="1673774763200" duration="106000" />
+      <workItem from="1673774881535" duration="430000" />
+      <workItem from="1673791870607" duration="2610000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1667590345804</created>
@@ -146,7 +216,49 @@
       <option name="project" value="LOCAL" />
       <updated>1667590366681</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added auth-server as separated maven module">
+      <created>1673701370552</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673701370552</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added properties for mysql database and database schema">
+      <created>1673709219836</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673709219836</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added simple security configuration">
+      <created>1673710295107</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673710295107</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added user and otp entities">
+      <created>1673710311210</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673710311210</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added user and otp repositories">
+      <created>1673710325319</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673710325319</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added user service and util for service">
+      <created>1673791925638</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673791925638</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +278,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Added dummy business logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dummy business logic" />
+    <MESSAGE value="Added auth-server as separated maven module" />
+    <MESSAGE value="Added properties for mysql database and database schema" />
+    <MESSAGE value="Added simple security configuration" />
+    <MESSAGE value="Added user and otp entities" />
+    <MESSAGE value="Added user and otp repositories" />
+    <MESSAGE value="Added user service and util for service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user service and util for service" />
   </component>
 </project>
