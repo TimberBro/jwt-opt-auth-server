@@ -1,4 +1,4 @@
-package com.epopov.controllers;
+package com.epopov.spring.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
