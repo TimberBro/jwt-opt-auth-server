@@ -26,7 +26,7 @@ public class AuthServerProxy {
     body.setUsername(username);
     body.setPassword(password);
     HttpEntity<User> request = new HttpEntity<>(body);
-    restTemplate.postForEntity(authUrl, body, Void.class);
+    restTemplate.postForEntity(authUrl, request, Void.class);
   }
 
   public boolean sendOTP(String username, String code) {
@@ -34,9 +34,11 @@ public class AuthServerProxy {
 
     User body = new User();
     body.setUsername(username);
-    body.setOTPcode(code);
+    body.setCode(code);
+
     HttpEntity<User> request = new HttpEntity<>(body);
-    ResponseEntity<Void> response = restTemplate.postForEntity(authUrl, body, Void.class);
+
+    ResponseEntity<Void> response = restTemplate.postForEntity(authUrl, request, Void.class);
 
     return response.getStatusCode().equals(HttpStatus.OK);
   }

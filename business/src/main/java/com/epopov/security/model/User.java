@@ -4,7 +4,7 @@ public class User {
 
   private String username;
   private String password;
-  private String OTPcode;
+  private String code;
 
   public String getUsername() {
     return username;
@@ -22,11 +22,11 @@ public class User {
     this.password = password;
   }
 
-  public String getOTPcode() {
-    return OTPcode;
+  public String getCode() {
+    return code;
   }
 
-  public void setOTPcode(String OTPcode) {
-    this.OTPcode = OTPcode;
+  public void setCode(String code) {
+    this.code = code;
   }
 }
