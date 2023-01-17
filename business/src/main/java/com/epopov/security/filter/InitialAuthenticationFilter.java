@@ -39,7 +39,7 @@ public class InitialAuthenticationFilter extends OncePerRequestFilter {
       manager.authenticate(a);
     } else {
       Authentication a = new OTPAuthentication(username, code);
-      manager.authenticate(a);
+      //manager.authenticate(a);
 
       SecretKey key = Keys.hmacShaKeyFor(signingKey.getBytes(StandardCharsets.UTF_8));
       String jwt = Jwts.builder()

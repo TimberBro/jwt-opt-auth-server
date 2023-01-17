@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Added user service and util for service">
-      <change afterPath="$PROJECT_DIR$/business/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Fix tests">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/configuration/ProjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/configuration/ProjectConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/controllers/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/AuthServerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/AuthServerProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/OTPAuthProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/OTPAuthProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/security/authentication/UsernamePassAuthProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/UsernamePassAuthProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epopov/security/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epopov/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/test/java/com/epopov/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/epopov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/configuration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/filter/InitialAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/filter/InitialAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/epopov/spring/configuration/ProjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/spring/configuration/ProjectConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +49,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2H5y34KwSN1trPsURIRU74yWlo9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -71,6 +66,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -78,7 +74,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;c2a773c56eac6a20dbf78a397b611e10&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;1513a6c7a438d56d5004b1d4c8c63ead&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -104,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AuthServerApplicationTests">
+  <component name="RunManager" selected="Spring Boot.App">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -157,7 +153,8 @@
       </method>
     </configuration>
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="jwt-opt-auth-server" />
+      <option name="ACTIVE_PROFILES" />
+      <module name="business" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.epopov.App" />
       <extension name="coverage">
         <pattern>
@@ -176,10 +173,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AuthServerApplicationTests" />
+      <item itemvalue="Spring Boot.AuthServerApplication" />
+      <item itemvalue="Spring Boot.App" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AuthServerApplicationTests" />
         <item itemvalue="Spring Boot.App" />
+        <item itemvalue="JUnit.AuthServerApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +202,9 @@
       <workItem from="1673707985838" duration="6879000" />
       <workItem from="1673774763200" duration="106000" />
       <workItem from="1673774881535" duration="430000" />
-      <workItem from="1673791870607" duration="2610000" />
+      <workItem from="1673791870607" duration="3446000" />
+      <workItem from="1673897231965" duration="3932000" />
+      <workItem from="1673977399172" duration="2750000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1667590345804</created>
@@ -258,7 +262,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673791925638</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactor to multi-module maven project">
+      <created>1673809231383</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673809231383</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix tests">
+      <created>1673809249860</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673809249860</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +302,8 @@
     <MESSAGE value="Added user and otp entities" />
     <MESSAGE value="Added user and otp repositories" />
     <MESSAGE value="Added user service and util for service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added user service and util for service" />
+    <MESSAGE value="Refactor to multi-module maven project" />
+    <MESSAGE value="Fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix tests" />
   </component>
 </project>
