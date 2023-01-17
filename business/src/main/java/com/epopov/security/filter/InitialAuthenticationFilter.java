@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
@@ -23,6 +24,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 public class InitialAuthenticationFilter extends OncePerRequestFilter {
 
   @Autowired
+  @Lazy
   private AuthenticationManager manager;
 
   @Value("${jwt.signing.key}")
@@ -39,7 +41,7 @@ public class InitialAuthenticationFilter extends OncePerRequestFilter {
       manager.authenticate(a);
     } else {
       Authentication a = new OTPAuthentication(username, code);
-      //manager.authenticate(a);
+      manager.authenticate(a);
 
       SecretKey key = Keys.hmacShaKeyFor(signingKey.getBytes(StandardCharsets.UTF_8));
       String jwt = Jwts.builder()
