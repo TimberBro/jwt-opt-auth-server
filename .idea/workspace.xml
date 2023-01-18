@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Again fix dependency cycle">
+    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Fix authentication bug, when proxy send wrong body to authentication server.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/com/epopov/authserver/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/epopov/authserver/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-server/src/main/java/com/epopov/authserver/model/Otp.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/java/com/epopov/authserver/model/Otp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/AuthServerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/AuthServerProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +199,7 @@
       <workItem from="1673791870607" duration="3446000" />
       <workItem from="1673897231965" duration="3932000" />
       <workItem from="1673977399172" duration="2750000" />
-      <workItem from="1673981987551" duration="2708000" />
+      <workItem from="1673981987551" duration="3234000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1667590345804</created>
@@ -288,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673984913994</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fix authentication bug, when proxy send wrong body to authentication server.">
+      <created>1673986711580</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673986711580</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,17 +322,7 @@
     <MESSAGE value="Fix tests" />
     <MESSAGE value="Fix dependency cycle" />
     <MESSAGE value="Again fix dependency cycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Again fix dependency cycle" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/AuthServerProxy.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Fix authentication bug, when proxy send wrong body to authentication server." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix authentication bug, when proxy send wrong body to authentication server." />
   </component>
 </project>
