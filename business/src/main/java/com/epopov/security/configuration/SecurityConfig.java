@@ -1,7 +1,9 @@
 package com.epopov.security.configuration;
 
+import com.epopov.security.filter.GeneralAuthenticationFilter;
 import com.epopov.security.filter.InitialAuthenticationFilter;
 import com.epopov.security.filter.JwtAuthenticationFilter;
+import com.epopov.security.provider.JwtAuthenticationProvider;
 import com.epopov.security.provider.OtpAuthenticationProvider;
 import com.epopov.security.provider.UsernamePasswordAuthenticationProvider;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +19,7 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 public class SecurityConfig {
 
   @Autowired
-  private InitialAuthenticationFilter initialAuthenticationFilter;
+  private GeneralAuthenticationFilter generalAuthenticationFilter;
   @Autowired
   private OtpAuthenticationProvider otpAuthenticationProvider;
 
@@ -25,17 +27,14 @@ public class SecurityConfig {
   private UsernamePasswordAuthenticationProvider usernamePasswordAuthenticationProvider;
 
   @Autowired
-  private JwtAuthenticationFilter jwtAuthenticationFilter;
+  private JwtAuthenticationProvider jwtAuthenticationProvider;
 
   @Bean
   protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
     http.csrf()
         .disable()
         .addFilterAt(
-            initialAuthenticationFilter,
-            BasicAuthenticationFilter.class)
-        .addFilterAfter(
-            jwtAuthenticationFilter,
+            generalAuthenticationFilter,
             BasicAuthenticationFilter.class)
         .authorizeRequests()
         .anyRequest().authenticated();
@@ -48,6 +47,7 @@ public class SecurityConfig {
     return http.getSharedObject(AuthenticationManagerBuilder.class)
         .authenticationProvider(otpAuthenticationProvider)
         .authenticationProvider(usernamePasswordAuthenticationProvider)
+        .authenticationProvider(jwtAuthenticationProvider)
         .build();
   }
 }

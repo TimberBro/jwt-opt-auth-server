@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Fix authentication bug, when proxy send wrong body to authentication server.">
+    <list default="true" id="44431d57-fe3f-4008-accb-755fe909d149" name="Changes" comment="Remove debugging println">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/authentication/JwtAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/filter/GeneralAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/provider/JwtAuthenticationProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/configuration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/com/epopov/security/configuration/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +204,7 @@
       <workItem from="1673897231965" duration="3932000" />
       <workItem from="1673977399172" duration="2750000" />
       <workItem from="1673981987551" duration="3234000" />
+      <workItem from="1674069191907" duration="3550000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1667590345804</created>
@@ -292,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673986711580</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Remove debugging println">
+      <created>1674069281353</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674069281353</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +335,18 @@
     <MESSAGE value="Fix dependency cycle" />
     <MESSAGE value="Again fix dependency cycle" />
     <MESSAGE value="Fix authentication bug, when proxy send wrong body to authentication server." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix authentication bug, when proxy send wrong body to authentication server." />
+    <MESSAGE value="Remove debugging println" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove debugging println" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/business/src/main/java/com/epopov/security/provider/JwtAuthenticationProvider.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
