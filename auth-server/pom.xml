@@ -7,7 +7,7 @@
     <groupId>com.epopov</groupId>
     <artifactId>jwt-opt-auth-server</artifactId>
     <version>0.1.0</version>
-    <relativePath/> <!-- lookup parent from repository -->
+    <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
   </parent>
   <artifactId>auth-server</artifactId>
   <version>0.1.0</version>
